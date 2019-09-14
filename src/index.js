@@ -28,5 +28,4 @@ import _ from 'lodash';
                 <td>${wine.color}</td>
                 <td>${wine.region}</td>
             `
-       
     });

@@ -1,11 +1,13 @@
 function getTastingNotes(e) {
     let id = parseInt(e.dataset.id)
-    let requestUrl = 'https://top-100-example.s3.amazonaws.com/' + id + '.json'
-
-    let note = $.getJSON(requestUrl, function (data) {
-        return data.note
+    let noteOutput = document.getElementById('note-info')
+    let requestUrl = 'http://top-100-example.s3.amazonaws.com/' + id + '.json'
+    return fetch(requestUrl, {mode: 'cors'}).then(response => {
+        return response.json();
     })
-
-    console.log(note)
+    .then(notes => {
+        noteOutput.innerHTML = notes.note
+    });
 }
+
 

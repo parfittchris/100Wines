@@ -4,11 +4,12 @@
 
 .app-body {
     display: flex;
+    flex-direction: column;
 }
 
 .info-main {
-    width: 75vw;
-    height: 100%;
+    width: 100vw;
+    height: 80vh;
     border: 1px solid black;
 }
 
@@ -39,8 +40,10 @@ td {
 }
 
 .info-sidebar {
-    width: 25vw;
-    height: 100px;
+    width: 100vw;
+    height: 20vh;
+    bottom: 0;
     border: 1px solid black;
-    /* position: fixed; */
+    position: fixed;
+    background-color: white;
 }
