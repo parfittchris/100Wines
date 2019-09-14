@@ -1,0 +1,46 @@
+.app-title {
+    text-align: center;
+}
+
+.app-body {
+    display: flex;
+}
+
+.info-main {
+    width: 75vw;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#wine-table {
+    width: 100%;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+    z-index: 5;
+}
+
+td {
+    border: 1px solid black;
+    z-index: -5;
+}
+
+.info-sidebar {
+    width: 25vw;
+    height: 100px;
+    border: 1px solid black;
+    /* position: fixed; */
+}
