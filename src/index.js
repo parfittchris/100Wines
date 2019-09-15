@@ -17,7 +17,7 @@ import _ from 'lodash';
     wineJson.forEach(wine => {
         ids.push(wine.id);
         let wineRow = table.insertRow();
-        wineRow.setAttribute('onclick', 'getTastingNotes(this)')
+        wineRow.setAttribute('onmouseover', 'getTastingNotes(this)')
         wineRow.setAttribute('data-id', `${wine.id}`)
 
         wineRow.innerHTML = `
