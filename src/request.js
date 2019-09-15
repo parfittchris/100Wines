@@ -19,6 +19,7 @@ let getTastingNotes = debounce(function (e) {
 // Debounce function that calls getTastingNotes at most once every 250ms
 function debounce(func, wait, immediate) {
     var timeout;
+    console.log('working?')
     return function () {
         var context = this, args = arguments;
         var later = function () {
