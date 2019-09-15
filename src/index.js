@@ -1,4 +1,8 @@
 import _ from 'lodash';
+    // These functions run when the page is loaded
+
+    // Set table to a variable to later append rows
+    // Manually create header row with necessary titles
 
     let wineJson = require('../docs/wines.json')
     let table = document.getElementById('wine-table')
@@ -13,6 +17,8 @@ import _ from 'lodash';
             <th>Color</th>
             <th>Region</th>
         </tr>`
+
+    //Loops through wines.json and create/append a new row to the table for each entry
 
     wineJson.forEach(wine => {
         ids.push(wine.id);
@@ -29,3 +35,5 @@ import _ from 'lodash';
                 <td>${wine.region}</td>
             `
     });
+
+    
