@@ -1,4 +1,5 @@
 let getTastingNotes = debounce(function (e) {
+    console.log('it works')
     //get wine id from the target of mouseover event
     let id = parseInt(e.dataset.id)
 
